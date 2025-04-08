@@ -5,6 +5,38 @@ public class Question {
     private String Opt2;
     private String Opt3;
     private String Opt4;
+    private String answer;
+
+    public Question(int id, String question, String opt1, String opt2, String opt3, String opt4, String answer) {
+        this.id = id;
+        Question = question;
+        Opt1 = opt1;
+        Opt2 = opt2;
+        Opt3 = opt3;
+        Opt4 = opt4;
+        this.answer = answer;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
+    }
+
+    @Override
+    public String toString() {
+        return "Question{" +
+                "id=" + id +
+                ", Question='" + Question + '\'' +
+                ", Opt1='" + Opt1 + '\'' +
+                ", Opt2='" + Opt2 + '\'' +
+                ", Opt3='" + Opt3 + '\'' +
+                ", Opt4='" + Opt4 + '\'' +
+                ", answer='" + answer + '\'' +
+                '}';
+    }
 
     public int getId() {
         return id;
